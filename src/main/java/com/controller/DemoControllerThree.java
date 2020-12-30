@@ -6,7 +6,7 @@ import com.repository.EmployeeJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 @RestController
@@ -19,7 +19,6 @@ public class DemoControllerThree {
            ConcurrentModificationException : When you are traversing any collection and you want to remove object then this exception occures
      */
 
-    //List<Employee> employeeList=new ArrayList<>();
 
     @RequestMapping (value="/get_all_employee",method = RequestMethod.GET)
     public List<Employee>  getEmployeeList(){
